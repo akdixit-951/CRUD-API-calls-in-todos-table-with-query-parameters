@@ -1,3 +1,16 @@
+/* 
+ * Created a table with name todo in the todoApplication.db file using the CLI
+ * 
+ * SQL command
+    CREATE TABLE todo(id INTEGER, todo TEXT, priority TEXT, status TEXT);
+    INSERT INTO todo(id, todo, priority, status)
+    VALUES (1, "Learn HTML", "HIGH", "TO DO"),
+    (2, "Learn JS", "MEDIUM", "IN PROGRESS"),
+    (3, "Learn CSS", "LOW", "DONE"),
+    (4, "Play Chess", "LOW", "DONE");
+    SELECT * FROM todo;
+*/
+
 const express = require("express");
 const path = require("path");
 const { open } = require("sqlite");
